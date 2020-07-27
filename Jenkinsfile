@@ -2,8 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
+			    bat "mvn clean"
+			    bat "type"
                 echo 'Hello World jenkins'
             }
         }
