@@ -7,7 +7,7 @@ pipeline {
 			   
                 script {
 				  writeFile(file:"base64File",text:"afsererererr323s",encoding:"Base64")
-                  def content = readFile(file:"base64File",encoding:"UTF-8")
+                  def content = readFile(file:"base64File",encoding:"Base64")
 				  echo "${content}"
 				}
             }
