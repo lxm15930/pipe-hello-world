@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('build') {
+        stage('example') {
             steps {
-			    bat "mvn clean package"
-                echo 'Hello World jenkins'
+                echo "Running ${env.BUILD_NUMBER} on ${env.JENKINS_URL}"
             }
         }
     }
