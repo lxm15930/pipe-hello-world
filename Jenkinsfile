@@ -5,12 +5,10 @@ pipeline {
         stage('example') {
             steps {
                 script {
-				 def hello(String name) {
-				   print "hello ${name}"
-				 }
-                 
-				 hello("pipeline")
-				 
+				def browsers = ['chrome','firefox']
+				for (int i=0; i<browsers.size(); ++i) {
+				 echo "Testing the ${browsers[i]} browser"
+				}				 
 				}
             }
         }
