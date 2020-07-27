@@ -5,10 +5,11 @@ pipeline {
         stage('example') {
             steps {
                 script {
-				 def  name = 'world'
-				 print "hello ${name}"
-				 print 'hello ${name}'
-
+				 def hello(String name) {
+				   print "hello ${name}"
+				 }
+                 
+				 hello("pipeline")
 				 
 				}
             }
