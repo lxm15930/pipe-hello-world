@@ -8,11 +8,7 @@ pipeline {
 				 def  name = 'world'
 				 print "hello ${name}"
 				 print 'hello ${name}'
-				 
-                 def sayhello(String name) {
-				   print "hello ${name}"
-				 }
-				 sayhello('pipeline')
+
 				 
 				}
             }
