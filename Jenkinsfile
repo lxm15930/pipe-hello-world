@@ -4,14 +4,11 @@ pipeline {
     stages {
         stage('example') {
             steps {
-			    dir("C://GEventFinancial/ttt333") {
-				 deleteDir()
-				}
+			   
                 script {
-				def browsers = ['chrome','firefox']
-				for (int i=0; i<browsers.size(); ++i) {
-				 echo "Testing the ${browsers[i]} browser"
-				}				 
+				  writeFile(file:"base64File",text:"afsererererr323s",encoding:"Base64")
+                  def content = readFile(file:"base64File",encoding:"UTF-8")
+				  echo "${content}"
 				}
             }
         }
