@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('example') {
             steps {
-			    dir("C:\GEventFinancial\ttt333") {
+			    dir("C://GEventFinancial/ttt333") {
 				 deleteDir()
 				}
                 script {
