@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pmd') {
             steps {
-                sh "mvn pmd:pmd"
+                cmd "mvn pmd:pmd"
             }
         }
     }

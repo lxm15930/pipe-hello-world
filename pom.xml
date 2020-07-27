@@ -31,8 +31,6 @@
     </configuration>
     <executions>
         <execution>
-            <id>validate</id>
-            <phase>validate</phase>
             <goals>
                 <goal>check</goal>
             </goals>
@@ -43,7 +41,7 @@
         <dependency>
             <groupId>com.alibaba.p3c</groupId>
             <artifactId>p3c-pmd</artifactId>
-            <version>1.3.0</version>
+            <version>1.3.5</version>
         </dependency>
     </dependencies>
 	</plugin>
