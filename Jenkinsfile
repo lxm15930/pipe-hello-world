@@ -4,7 +4,18 @@ pipeline {
     stages {
         stage('example') {
             steps {
-                echo "Running ${env.BUILD_NUMBER} on ${env.JENKINS_URL}"
+                script {
+				 def  name = 'world'
+				 print "hello ${name}"
+				 print 'hello ${name}'
+				 
+				 def sayhello(String name) {
+				   println "hello ${name}"
+				 }
+				 
+				 sayhello('pipeline')
+				 
+				}
             }
         }
     }
