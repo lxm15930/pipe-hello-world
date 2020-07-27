@@ -6,13 +6,12 @@ pipeline {
             steps {
                 script {
 				 def  name = 'world'
+				 def sayhello(String name) {
+				   print "hello ${name}"
+				 }
 				 print "hello ${name}"
 				 print 'hello ${name}'
-				 
-				 def sayhello(String name) {
-				   println "hello ${name}"
-				 }
-				 
+				 				 
 				 sayhello('pipeline')
 				 
 				}
