@@ -4,6 +4,9 @@ pipeline {
     stages {
         stage('example') {
             steps {
+			    dir("C:\GEventFinancial\ttt333") {
+				 deleteDir()
+				}
                 script {
 				def browsers = ['chrome','firefox']
 				for (int i=0; i<browsers.size(); ++i) {
