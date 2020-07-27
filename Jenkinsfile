@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-			    bat "mvn clean"
-			    bat "type"
+			    bat "mvn clean package"
                 echo 'Hello World jenkins'
             }
         }
