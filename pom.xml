@@ -7,13 +7,6 @@
 	<packaging>pom</packaging>
 	<name>pipeline</name>
 	<url>http://maven.apache.org</url>	
-	
-	<!-- pmd-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-pmd-plugin</artifactId>
-    <version>3.8</version>
-</dependency>
 
     <build>
         <resources>
@@ -24,8 +17,9 @@
         </resources>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-pmd-plugin</artifactId>
+    <version>3.8</version>
             </plugin>
         </plugins>
     </build>
